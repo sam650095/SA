@@ -58,7 +58,16 @@ $name=$_SESSION['name'];
                                 echo "無";
                                 }else{echo $rslt['book_user'] ;}
                             ?><br>租借人：<?php echo $rslt['book_user'] ?>
-                            <br>捐借人：<?php echo $rslt['book_owner'] ?></p>
+                            <br>捐借人：<?php echo $rslt['book_owner'] ?>
+                            <br>作者：<?php echo $rslt['book_author'] ?>
+                            <br>出版社：<?php echo $rslt['public'] ?>
+                            <br>出版日期：<?php echo $rslt['public_date'] ?>
+                            <br>類別：<?php echo $rslt['book_category'] ?>
+                            
+                            </p>
+                            
+
+
                             <ul class="actions">
                                 <li><a href="#" class="button">下架</a></li>
                             </ul>
