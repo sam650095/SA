@@ -33,10 +33,6 @@ $rs = mysqli_query($link, $sql);
                             <input type="text" name="query" id="query" placeholder="輸入關鍵字" />
                         </form>
                     </section>
-                    <ul class="icons">
-                        <li><a href="register.php" class="">加入會員</span></a></li>
-                        <li><a href="login.php" class="button primary small">登入</span></a></li>
-                    </ul>
 
                 </header>
 
