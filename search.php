@@ -25,12 +25,7 @@
             for($i=0;$i<count($result);$i++) { 
             echo $result[$i]." ";}
         ?></B></p>
-        <p><hr></p>
-        <?php if($totalRows_rs>0) do { ?>
-        <p>* <a href="show.php?key=<?php echo $colname_rs ?>&id=<?php echo
-        $row_rs["id"]; ?>"><?php echo $row_rs["title"]; ?></a>(<?php echo
-        $row_rs["click"]; ?> | <?php echo $row_rs["last_access"]; ?>)</p>
-        <?php } while ($row_rs = mysqli_fetch_assoc($rs)); ?>
+        
     </body>
 </html>
 <html>
