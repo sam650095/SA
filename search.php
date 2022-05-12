@@ -67,7 +67,7 @@
                 <section>
 
                     <!-- Content -->
-                    <h2 id="content">搜尋結果如下</h2>
+                    <h2 id="content">搜尋結果</h2>
                     <hr class="major" />
                     
                     <!--搜尋書籍關鍵字結果-->
