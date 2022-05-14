@@ -1,7 +1,7 @@
 <?php
 session_start();
 $name = $_SESSION['name'];
-$link = mysqli_connect("localhost", "root");
+$link = mysqli_connect("localhost", "root", "12345678");
 mysqli_select_db($link, "sa");
 $sql = "select * from book_info";
 $rs = mysqli_query($link, $sql);
@@ -29,6 +29,24 @@ $rs = mysqli_query($link, $sql);
                 <!-- Header -->
                 <header id="header">
                     <section id="search" class="alt">
+                    <?
+                        if ($_SESSION['name'] <> "")
+                        {
+                    ?>
+                        <ul class="icons">
+                            <li><a href="logout.php" class="button primary small"><? echo $_SESSION['name']; ?></span></a></li>
+                        </ul>
+                    <?
+                        }
+                        else
+                        {
+                    ?>
+                        <ul class="icons">
+                            <li><a href="login.php" class="button primary small">登入</span></a></li>
+                        </ul>
+                    <?
+                        }
+                    ?>
                         <form method="post" action="#">
                             <input type="text" name="query" id="query" placeholder="輸入關鍵字" />
                         </form>
