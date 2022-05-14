@@ -10,7 +10,7 @@ session_start();
     $book_owner = $_SESSION['name'];
     $book_user =$_POST['book_user'];
 
-    $link = mysqli_connect("localhost", "root");
+    $link = mysqli_connect("localhost", "root", "12345678");
 	mysqli_select_db($link, "sa");
     
     $sql="INSERT INTO `book_info`(`book_owner`,`book_user`,`book_name`, `book_author`, `public`, `public_date`, `book_category`, `book_image`, `book_introduction`) 

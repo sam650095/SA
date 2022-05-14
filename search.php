@@ -1,7 +1,7 @@
 <?php 
     $colname_rs = $_POST["query"];
     $result = explode(" ",$_POST["query"]);
-    $link = mysqli_connect("localhost", "root");
+    $link = mysqli_connect("localhost", "root", "12345678");
     mysqli_select_db($link, "sa");
     $query_rs = "";
     for($i=0;$i<count($result);$i++){

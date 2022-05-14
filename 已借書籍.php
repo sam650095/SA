@@ -1,7 +1,7 @@
 <?php
 session_start();
 $name=$_SESSION['name'];
-    $link = mysqli_connect("localhost", "root");
+    $link = mysqli_connect("localhost", "root", "12345678");
     mysqli_select_db($link, "sa");
     $sql = "select * from book_info where book_owner = '$name'";
     $rs = mysqli_query($link, $sql);

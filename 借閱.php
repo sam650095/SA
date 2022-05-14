@@ -2,7 +2,7 @@
 session_start();
 
 $name = $_SESSION['name'];
-$link = mysqli_connect("localhost", "root");
+$link = mysqli_connect("localhost", "root", "12345678");
 mysqli_select_db($link, "sa");
 
 $book_name = $_GET['book'];
