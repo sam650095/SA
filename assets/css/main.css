@@ -2799,7 +2799,7 @@ button:disabled,
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 0 2em -6em;
-    width: calc(100% + 6em);
+    width: calc(35% + 6em);
 }
 
 .posts article {
