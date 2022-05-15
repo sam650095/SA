@@ -22,15 +22,65 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>書籍共享平台</strong></a>
+									<a href="index.php" class="logo"><strong>書籍共享平台</strong></a>
 									<ul class="icons">
-										<li><a href="#" class="button primary small">登入</span></a></li>
+										<li><a href="login.php" class="button primary small">登入</span></a></li>
 									</ul>
 									
 								</header>
 
 							<!-- Banner -->
 							
+                            <!-- 瀏覽Section  -->
+                                <section>
+                                    <header class="major">
+                                        <h2>投資理財</h2>
+                                    </header>
+                                    <div class="featuresforbrowse">
+                                        <article>
+                                            <span><img src="images/灰階思考.jpg" alt="" /></span>
+                                            <div class="content">
+                                                <h3>灰階思考</h3>
+                                                <p>作者：謝孟恭</p>
+                                                <p>出版社：天下文化</p>
+                                                <p>黑白之間都是灰，找到無限價值的所在。Podcast冠軍節目股癌製作人謝孟恭首本力作！</p>
+                                                <ul class="actions">
+                                                    <li><a href="#" class="button">立即借閱</a></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <span><img src="images/股票作手回憶錄.jpg" alt="" /></span>
+                                            <div class="content">
+                                                <h3>灰階思考</h3>
+                                                <p>黑白之間都是灰，找到無限價值的所在。Podcast冠軍節目股癌製作人謝孟恭首本力作！</p>
+                                                <ul class="actions">
+                                                    <li><a href="#" class="button">立即借閱</a></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <span><img src="images/致富心態.jpg" alt="" /></span>
+                                            <div class="content">
+                                                <h3>致富心態</h3>
+                                                <p>《華爾街日報》、亞馬遜書店暢銷書現代社會最重要、卻被嚴重被低估的技能</p>
+                                                <ul class="actions">
+                                                    <li><a href="#" class="button">立即借閱</a></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <span><img src="images/漫步華爾街.jpg" alt="" /></span>
+                                            <div class="content">
+                                                <h3>灰階思考</h3>
+                                                <p>黑白之間都是灰，找到無限價值的所在。Podcast冠軍節目股癌製作人謝孟恭首本力作！</p>
+                                                <ul class="actions">
+                                                    <li><a href="#" class="button">立即借閱</a></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
 
 							<!-- Section -->
 								<section>
@@ -146,101 +196,7 @@
 					</div>
 
 				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">首頁</a></li>
-										<li><a href="generic.html">借閱書籍</a></li>
-										<li><a href="elements.html">分享書籍</a></li>
-										<li>
-											<span class="opener">瀏覽書籍</span>
-											<ul>
-												<li><a href="#">哲學類</a></li>
-												<li><a href="#">宗教類</a></li>
-												<li><a href="#">科學類</a></li>
-												<li><a href="#">應用科學類</a></li>
-												<li><a href="#">社會科學類</a></li>
-												<li><a href="#">史地類：中國史地</a></li>
-												<li><a href="#">史地類：世界史地</a></li>
-												<li><a href="#">語言文學類</a></li>
-												<li><a href="#">藝術類</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
-
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-
-						</div>
-					</div>
+                <?php include "index_bar.html" ?>
 
 			</div>
 

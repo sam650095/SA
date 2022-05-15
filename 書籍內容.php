@@ -57,7 +57,7 @@ $rs = mysqli_query($link, $sql);
 
                     </div>
                     <span class="image object">
-                        <img src="images/<?php echo $book_info[7]; ?>" alt="">
+                        <img src="images/<?php echo $book_info[8]; ?>" alt="">
                     </span>
                 <?php } ?>
                 </section>
