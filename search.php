@@ -8,10 +8,10 @@
         if($i==0) 
             $query_rs = "SELECT * FROM book_info WHERE book_name LIKE '$result[0]' ";
         else 
-            $query_rs = " UNION SELECT * FROM book_info WHERE book_name LIKE '$result[$i]' ";
+            $query_rs .= " UNION SELECT * FROM book_info WHERE book_name LIKE '$result[$i]' ";
     }
 
-    $query_rs = " ORDER BY book_name DESC";
+    $query_rs .= " ORDER BY book_name DESC"; 
     $rs = mysqli_query($link, $query_rs);
     $row_rs = mysqli_fetch_assoc($rs);
     $totalRows_rs = mysqli_num_rows($rs);
@@ -58,11 +58,12 @@
                     <p align="center"><B>關鍵詞搜索結果如下：</B></p>
                     <p><hr></p>
                     <?php if($totalRows_rs>0) do { ?>
-                    <p>書名 : <?php echo $result; ?><br></p>
-                    <p>出版社 : <?php echo $result[4]; ?><br></p>
-                    <p>出版日期 : <?php echo $result[5]; ?><br></p>
-                    <p>類別 : <?php echo $result[6]; ?><br></p>
-                    <p>簡介 : <?php echo $result[8]; ?><br></p>
+                    <p>書名 : <?php echo $row_rs["book_name"]; ?><br></p>
+                    <p>出版社 : <?php echo $row_rs["public"]; ?><br></p>
+                    <p>出版日期 : <?php echo $row_rs["public_date"]; ?><br></p>
+                    <p>類別 : <?php echo $row_rs["book_category"]; ?><br></p>
+                    <p>簡介 : <?php echo $row_rs["book_introduction"]; ?><br></p>
+                    <p> <?php printf("------------------------------ \n"); ?><br></p>
                     <?php } while ($row_rs = mysqli_fetch_assoc($rs)); ?>
                     
 
@@ -85,4 +86,3 @@
 </body>
 
 </html>
-
