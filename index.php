@@ -79,12 +79,12 @@ $rs = mysqli_query($link, $sql);
                         <h2>本月推薦</h2>
                     </header>
                     <div class="features">
-                        <article>
+                        
                             <?php
                             $i = 0;
                             while ($rslt =  mysqli_fetch_assoc($rs) and $i < 4) {
                             ?>
-
+                            <article>
                                 <span><img src="images/<?php echo $rslt['book_image'];?>" alt="" /></span>
                                 <div class="content">
                                     <h3><?php echo $rslt['book_name'];?></h3>
@@ -94,10 +94,10 @@ $rs = mysqli_query($link, $sql);
                                     </ul>
                                 </div>
 
-
+                            </article>
                             <?php $i += 1;
                             } ?>
-                        </article>
+                        
                     </div>
                 </section>
 
@@ -154,58 +154,10 @@ $rs = mysqli_query($link, $sql);
 
                 <!-- Section -->
 
-                <!-- Section  -->
-                <section>
-                    <header class="major">
-                        <h2>慢思人生</h2>
-                    </header>
-                    <div class="features">
-                        <article>
-                            <span><img src="images/哲學與人生.jpg" alt="" /></span>
-                            <div class="content">
-                                <h3>哲學與人生</h3>
-                                <p>黑白之間都是灰，找到無限價值的所在。Podcast冠軍節目股癌製作人謝孟恭首本力作！</p>
-                                <ul class="actions">
-                                    <li><a href="#" class="button">立即借閱</a></li>
-                                </ul>
-                            </div>
-
-                            <span><img src="images/沉思錄.jpg" alt="" /></span>
-                            <div class="content">
-                                <h3>沉思錄</h3>
-                                <p>黑白之間都是灰，找到無限價值的所在。Podcast冠軍節目股癌製作人謝孟恭首本力作！</p>
-                                <ul class="actions">
-                                    <li><a href="#" class="button">立即借閱</a></li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article>
-                            <span><img src="images/西方哲學與人生.jpg" alt="" /></span>
-                            <div class="content">
-                                <h3>西方哲學與人生</h3>
-                                <p>《華爾街日報》、亞馬遜書店暢銷書現代社會最重要、卻被嚴重被低估的技能</p>
-                                <ul class="actions">
-                                    <li><a href="#" class="button">立即借閱</a></li>
-                                </ul>
-                            </div>
-
-                            <span><img src="images/廁所裡的哲學課.jpg" alt="" /></span>
-                            <div class="content">
-                                <h3>廁所裡的哲學課</h3>
-                                <p>黑白之間都是灰，找到無限價值的所在。Podcast冠軍節目股癌製作人謝孟恭首本力作！</p>
-                                <ul class="actions">
-                                    <li><a href="#" class="button">立即借閱</a></li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-
-                <!-- Section -->
                 <!-- 瀏覽Section  -->
                 <section>
                     <header class="major">
-                        <h2>投資理財</h2>
+                        <h2>瀏覽書籍</h2>
                     </header>
                     <div class="featuresforbrowse">
                         <article>
