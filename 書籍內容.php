@@ -6,7 +6,7 @@
 session_start();
 $name = $_SESSION['name'];
 $book_name = $_GET['book'];
-$link = mysqli_connect("localhost", "root", "12345678");
+$link = mysqli_connect("localhost", "root");
 mysqli_select_db($link, "sa");
 
 $sql = "select * from book_info where book_name = '$book_name'";

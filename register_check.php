@@ -7,7 +7,7 @@ $account = $_POST['account'];
 $password = $_POST['password'];
 $email = $_POST['email'];
 
-$link = mysqli_connect("localhost", "root", "12345678");
+$link = mysqli_connect("localhost", "root");
 mysqli_select_db($link, "sa");
 
 $sql = "select * from account where account = '$account'";
