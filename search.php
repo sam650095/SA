@@ -47,7 +47,7 @@
 
                 <!-- Header -->
                 <header id="header">
-                    <a href="index.html" class="logo"><strong>書籍共享平台</strong></a>
+                    <a href="index.php" class="logo"><strong>書籍共享平台</strong></a>
                     <ul class="icons">
                         <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -66,7 +66,6 @@
                     
                     <!--搜尋書籍關鍵字結果-->
                     <p align="center"><B>關鍵詞搜索結果如下：</B></p>
-                    <p><hr></p>
                     <?php if($totalRows_rs>0) do { ?>
                         <div class="book_jpg_style123">
                             <img src="images/<?php echo $row_rs['book_image'];?>" />
