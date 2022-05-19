@@ -76,7 +76,7 @@ if (isset($_SESSION['name'])) {
 
 
                                 <ul class="actions">
-                                    <li><a href="#" class="button">下架</a></li>
+                                    <li><a href="下架書籍.php?book_id=<?php echo $rslt['book_id'] ?>" class="button">下架</a></li>
                                 </ul>
                             </article>
                         <?php } ?>
