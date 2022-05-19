@@ -65,7 +65,7 @@
                     <p>類別 : <?php echo $row_rs["book_category"]; ?><br></p>
                     <p>簡介 : <?php echo $row_rs["book_introduction"]; ?><br></p>
                     <p>書名 : <?php echo $row_rs["book_name"]; ?><br></p>
-                    <p><?php echo $row_rs["book_image"]; ?><br></p>
+                    <img src="images/<?php $row_rs["book_image"]; ?>"  />
                     <p> <?php printf("------------------------------ \n"); ?><br></p>
                     <?php } while ($row_rs = mysqli_fetch_assoc($rs)); ?>
                     
