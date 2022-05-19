@@ -47,7 +47,7 @@ $rs = mysqli_query($link, $sql);
                     <?
                         }
                     ?>
-                        <form method="post" action="#">
+                        <form method="post" action="search.php">
                             <input type="text" name="query" id="query" placeholder="輸入關鍵字" />
                         </form>
                     </section>
