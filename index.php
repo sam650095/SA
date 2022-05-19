@@ -1,10 +1,23 @@
+<!--
+    1.需要name沒有值的時候，沒有登入者的資訊
+        (沒有登入的時候不能上架書籍)
+        有name的的時候出現登出
+    2.忘記密碼
+    3.還書
+    -->
 <?php
-session_start();
-$name = $_SESSION['name'];
+
 $link = mysqli_connect("localhost", "root");
 mysqli_select_db($link, "sa");
 $sql = "select * from book_info";
 $rs = mysqli_query($link, $sql);
+if(isset($_GET['log'])){
+    if($_GET['log']=='no'){
+        echo "<script>alert('請先登入帳號密碼')</script>";
+    }else if($_GET['log']=='r_success'){
+        echo "<script>alert('還書成功')</script>";
+    }
+}
 ?>
 <!DOCTYPE HTML>
 
@@ -25,9 +38,8 @@ $rs = mysqli_query($link, $sql);
         <!-- Main -->
         <div id="main">
             <div class="inner">
-
-                <!-- Header -->
-                <header id="header">
+            <!-- Header -->
+            <header id="header">
                     <section id="search" class="alt">
                     <?
                         if ($_SESSION['name'] <> "")
@@ -53,7 +65,6 @@ $rs = mysqli_query($link, $sql);
                     </section>
 
                 </header>
-
                 <!-- Banner -->
 
                 <section id="banner">
@@ -79,25 +90,25 @@ $rs = mysqli_query($link, $sql);
                         <h2>本月推薦</h2>
                     </header>
                     <div class="features">
-                        
-                            <?php
-                            $i = 0;
-                            while ($rslt =  mysqli_fetch_assoc($rs) and $i < 4) {
-                            ?>
+
+                        <?php
+                        $i = 0;
+                        while ($rslt =  mysqli_fetch_assoc($rs) and $i < 4) {
+                        ?>
                             <article>
-                                <span><img src="images/<?php echo $rslt['book_image'];?>" alt="" /></span>
+                                <span><img src="images/<?php echo $rslt['book_image']; ?>" alt="" /></span>
                                 <div class="content">
-                                    <h3><?php echo $rslt['book_name'];?></h3>
-                                    <p><?php echo $rslt['book_introduction'];?></p>
+                                    <h3><?php echo $rslt['book_name']; ?></h3>
+                                    <p><?php echo $rslt['book_introduction']; ?></p>
                                     <ul class="actions">
                                         <li><a href="書籍內容.php?book=<?php echo $rslt['book_name'] ?>" class="button">立即借閱</a></li>
                                     </ul>
                                 </div>
 
                             </article>
-                            <?php $i += 1;
-                            } ?>
-                        
+                        <?php $i += 1;
+                        } ?>
+
                     </div>
                 </section>
 

@@ -1,10 +1,15 @@
 <?php
 session_start();
-$name=$_SESSION['name'];
+if (isset($_SESSION['name'])) {
+    $name = $_SESSION['name'];
     $link = mysqli_connect("localhost", "root");
     mysqli_select_db($link, "sa");
     $sql = "select * from book_info where book_owner = '$name'";
     $rs = mysqli_query($link, $sql);
+} else {
+    header("location:index.php?log=no");
+}
+
 ?>
 <!DOCTYPE HTML>
 
@@ -29,7 +34,7 @@ $name=$_SESSION['name'];
 
                 <!-- Header -->
                 <header id="header">
-                    <a href="index.html" class="logo"><strong>書籍共享</strong></a>
+                    <a href="index.php" class="logo"><strong>書籍共享</strong></a>
                     <ul class="icons">
                         <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>

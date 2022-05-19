@@ -1,10 +1,15 @@
 <?php
 session_start();
-$name=$_SESSION['name'];
+if (!(isset($_SESSION['name']))) {
+    header("location:index.php?log=no");
+}else{
+    $name=$_SESSION['name'];
     $link = mysqli_connect("localhost", "root");
     mysqli_select_db($link, "sa");
-    $sql = "select * from book_info where book_owner = '$name'";
+    $sql = "select * from book_info where book_user = '$name'";
     $rs = mysqli_query($link, $sql);
+}
+    
 ?>
 <!DOCTYPE HTML>
 
@@ -29,7 +34,7 @@ $name=$_SESSION['name'];
 
                 <!-- Header -->
                 <header id="header">
-                    <a href="index.html" class="logo"><strong>書籍共享</strong></a>
+                    <a href="index.php" class="logo"><strong>書籍共享</strong></a>
                     <ul class="icons">
                         <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -56,10 +61,10 @@ $name=$_SESSION['name'];
                             <h3><?php echo $rslt['book_name'] ?></h3>
                             <p>租借情況：<?php if($rslt['book_user']=="無"){
                                 echo "無";
-                                }else{echo $rslt['book_user'] ;}
-                            ?><br>捐借人：<?php echo $rslt['book_user'] ?></p>
+                                }else{echo "租借中" ;}
+                            ?><br>捐借人：<?php echo $rslt['book_owner'] ?></p>
                             <ul class="actions">
-                                <li><a href="#" class="button">下架</a></li>
+                                <li><a href="return.php?book=<?php echo $rslt['book_name'] ?>" class="button">還書</a></li>
                             </ul>
                         </article>
                         <?php }?>
