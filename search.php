@@ -59,10 +59,13 @@
                     <p><hr></p>
                     <?php if($totalRows_rs>0) do { ?>
                     <p>書名 : <?php echo $row_rs["book_name"]; ?><br></p>
+                    <p>作者 : <?php echo $row_rs["book_author"]; ?><br></p>
                     <p>出版社 : <?php echo $row_rs["public"]; ?><br></p>
                     <p>出版日期 : <?php echo $row_rs["public_date"]; ?><br></p>
                     <p>類別 : <?php echo $row_rs["book_category"]; ?><br></p>
                     <p>簡介 : <?php echo $row_rs["book_introduction"]; ?><br></p>
+                    <p>書名 : <?php echo $row_rs["book_name"]; ?><br></p>
+                    <p><?php echo $row_rs["book_image"]; ?><br></p>
                     <p> <?php printf("------------------------------ \n"); ?><br></p>
                     <?php } while ($row_rs = mysqli_fetch_assoc($rs)); ?>
                     
