@@ -38,7 +38,33 @@ if(isset($_GET['log'])){
         <!-- Main -->
         <div id="main">
             <div class="inner">
+            <!-- Header -->
+            <header id="header">
+                    <section id="search" class="alt">
+                    <?
+                        if ($_SESSION['name'] <> "")
+                        {
+                    ?>
+                        <ul class="icons">
+                            <li><a href="logout.php" class="button primary small"><? echo $_SESSION['name']; ?></span></a></li>
+                        </ul>
+                    <?
+                        }
+                        else
+                        {
+                    ?>
+                        <ul class="icons">
+                            <li><a href="login.php" class="button primary small">登入</span></a></li>
+                        </ul>
+                    <?
+                        }
+                    ?>
+                        <form method="post" action="#">
+                            <input type="text" name="query" id="query" placeholder="輸入關鍵字" />
+                        </form>
+                    </section>
 
+                </header>
                 <!-- Banner -->
 
                 <section id="banner">
