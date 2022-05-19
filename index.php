@@ -55,7 +55,7 @@ if(isset($_GET['log'])){
                                 <li><a href='login.php' class='button primary small'>登入</span></a></li>
                                 </ul>";
                         }
-                        ?>
+                        
                     </section>
 
                 </header>
