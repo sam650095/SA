@@ -63,6 +63,7 @@
                         } ?>
 						<input type="submit" class="input_btn" value="送出"><br>
 					</form>
+                    <a href="login.php">已加入會員，立即登入！</a>
 					</span>
                 </section>
             </div>

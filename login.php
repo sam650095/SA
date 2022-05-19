@@ -59,6 +59,7 @@
                         <input type="submit" class="input_btn" value="登入"><br>
                         <a href="forget.php">忘記密碼</a>
                         </form>
+                        <a href="register.php">還未加入會員嗎？點我註冊</a>
                     </span>
                 </section>
             </div>
