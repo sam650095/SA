@@ -56,10 +56,6 @@ if(isset($_GET['log'])){
                                 </ul>";
                         }
                         ?>
-                        
-                        <form method="post" action="#">
-                            <input type="text" name="query" id="query" placeholder="輸入關鍵字" />
-                        </form>
                     </section>
 
                 </header>
