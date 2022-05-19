@@ -65,7 +65,6 @@
                     <p>出版日期 : <?php echo $row_rs["public_date"]; ?><br></p>
                     <p>類別 : <?php echo $row_rs["book_category"]; ?><br></p>
                     <p>簡介 : <?php echo $row_rs["book_introduction"]; ?><br></p>
-                    <p>書名 : <?php echo $row_rs["book_name"]; ?><br></p>
                     <p> <?php printf("------------------------------ \n"); ?><br></p>
                     <?php } while ($row_rs = mysqli_fetch_assoc($rs)); ?>
                     
