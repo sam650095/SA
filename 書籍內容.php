@@ -51,13 +51,13 @@ $rs = mysqli_query($link, $sql);
                             <p>介紹文 : <?php echo $book_info[8]; ?></p>
                             <ul class="actions">
                                 <li><?php if ($book_info[0] == $name) { ?><a href="借閱.php" class="button big">下架</a>
-                                    <?php } else { ?><a href="借閱.php?book=<?php echo $book_info[2] ?>" class="button big">借閱</a><?php } ?>
+                                    <?php } else { ?><a href="borr.php?book=<?php echo $book_info[2] ?>" class="button big">借閱</a><?php } ?>
                                 </li>
                             </ul>
 
                     </div>
                     <span class="image object">
-                        <img src="images/<?php echo $book_info[8]; ?>" alt="">
+                        <img src="images/<?php echo $book_info[7]; ?>" alt="">
                     </span>
                 <?php } ?>
                 </section>

@@ -57,7 +57,7 @@
                         echo "<br>";
                         ?>
                         <input type="submit" class="input_btn" value="登入"><br>
-                        <a href="forget.php">忘記密碼</a>
+                        <a href="register.php">註冊帳號</a><a href="forget.php">忘記密碼</a>
                         </form>
                     </span>
                 </section>

@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!(isset($_SESSION['name']))) {
+    header("location:index.php?log=no");
+}
+
+?>
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -24,7 +31,7 @@
 
                 <!-- Header -->
                 <header id="header">
-                    <a href="index.html" class="logo"><strong>書籍共享平台</strong></a>
+                    <a href="index.php" class="logo"><strong>書籍共享平台</strong></a>
                     <ul class="icons">
                         <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
