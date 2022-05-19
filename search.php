@@ -22,6 +22,7 @@
         float:left;
         margin-right:40px;
         clear: both;
+        height: 400px;
     }
 
 </style>
