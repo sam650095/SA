@@ -52,7 +52,35 @@ if (isset($_SESSION['name'])) {
                     <header class="major">
                         <h2>已上架書籍</h2>
                     </header>
-                    
+                    <div class="posts">
+                        <?php
+                        while($rslt =  mysqli_fetch_assoc($rs)){
+                        ?>
+                        <article>
+                            <a href="書籍內容.php?book=<?php echo $rslt['book_name'] ?>" class="image"><img src='images/<?php echo $rslt['book_image'];?>' alt="" /></a>
+                            <h3><?php echo $rslt['book_name'] ?></h3>
+                            <p>租借情況：<?php if($rslt['book_user']=="無"){
+                                echo "無";
+                                }else{echo $rslt['book_user'] ;}
+                            ?><br>租借人：<?php echo $rslt['book_user'] ?>
+                            <br>捐借人：<?php echo $rslt['book_owner'] ?>
+                            <br>作者：<?php echo $rslt['book_author'] ?>
+                            <br>出版社：<?php echo $rslt['public'] ?>
+                            <br>出版日期：<?php echo $rslt['public_date'] ?>
+                            <br>類別：<?php echo $rslt['book_category'] ?>
+                            
+                            </p>
+                            
+
+
+                            <ul class="actions">
+                                <li><a href="#" class="button">下架</a></li>
+                            </ul>
+                        </article>
+                        <?php }?>
+                        
+
+                    </div>
                 </section>
 
             </div>
