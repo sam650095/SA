@@ -39,20 +39,6 @@ if(isset($_GET['log'])){
         <div id="main">
             <div class="inner">
 
-                <!-- Header -->
-                <header id="header">
-                    <section id="search" class="alt">
-                        <?php
-                        session_start();
-                        if (isset($_SESSION['name'])) {
-                            $name = $_SESSION['name'];
-                            
-                            echo "<ul class='icons'>
-                                <li><p>$name ，歡迎光臨 <a href='logout.php' class='button primary small'>登出</span></a></p></li>
-                                </ul>";}
-                        ?>   
-                </header>
-
                 <!-- Banner -->
 
                 <section id="banner">
